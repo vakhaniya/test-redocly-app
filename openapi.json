@@ -17,6 +17,9 @@
     "/new-endpoint": {
       "get": {
         "summary": "New Endpoint",
+        "description": {
+          "$ref": "./description.yaml#/endpoint"
+        }
         "operationId": "get_new-endpoint",
         "responses": {
           "200": {
