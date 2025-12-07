@@ -1,0 +1,49 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Todo",
+    "description": {
+      "$ref": "./description.yaml#/general"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://example.com"
+    }
+  ],
+  "tags": [],
+  "paths": {
+    "/new-endpoint": {
+      "get": {
+        "summary": "New Endpoint",
+        "description": {
+          "$ref": "./description.yaml#/endpoint"
+        },
+        "operationId": "get_new-endpoint",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "type": "number"
+            },
+            "description": "limit value!"
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {}
+  },
+  "x-readme": {
+    "explorer-enabled": true,
+    "proxy-enabled": true
+  }
+}
