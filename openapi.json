@@ -3,6 +3,9 @@
   "info": {
     "version": "1.0.0",
     "title": "Todo",
+    "description": {
+      "$ref": "./description.yaml#/general"
+    }
   },
   "servers": [
     {
