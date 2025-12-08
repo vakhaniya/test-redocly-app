@@ -18,6 +18,7 @@
       "get": {
         "summary": "New Endpoint",
         "operationId": "get_new-endpoint",
+        "description": "original description",
         "responses": {
           "200": {
             "description": "Successful response"
